@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #000;
+    --cor-seccundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    /* height: 100vh;   */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-seccundaria);
+}
+
+.titulo1{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+   
+}
+
+.escrita{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.titulo{
+    font-size: 2.25rem;
+    font-family:'Krona One', sans-serif;
+}
+
+.paragrafo{
+    font-size: 1.5rem;
+    font-family:'Montserrat', sans-serif;
+}
+
+.links{
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.link{
+   /* background-color: aqua; */
+   display: flex;
+   justify-content: center;
+   gap: 16px;
+   width: 50%;
+   text-align: center;
+   border-radius: 8px;
+   padding: 21.5px 0px;
+   font-family:  'Montserrat', sans-serif;
+   color: var(--cor-seccundaria);
+   font-weight: 600;
+   border: 2px solid var(--cor-terciaria);
+   
+}
+
+.redes{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}    
+
+.link:hover{
+   background-color: var(--cor-hover);
+   font-size: larger;
+   width: 400px;
+   padding: 23px 0px;
+}
+
+.pe{
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    color: var(--cor-primaria);
+    font-family: 'Krona One', sans-serif;
+    padding: 24px;
+    font-weight: 400;
+}
+
+.cabeca{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--cor-terciaria);
+}
+
+.head{
+    padding: 2% 0% 0% 15%;
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho{
+    text-decoration: none;
+}
+
+.imagem{
+    width: 50%;
+    gap: 82px;
+}
+
+@media (max-width:1200px){
+    .apresentacao{
+        flex-direction:column-reverse;
+        padding: 5%;
+    }
+
+    .cabeca{
+        padding: 10%;
+    }
+
+    .head{
+        justify-content: center;
+    }
+
+    .body{
+        background-color: #00f;
+    }
+
+    .escrita{
+        width: auto;
+    }
+}
